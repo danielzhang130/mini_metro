@@ -1,0 +1,46 @@
+!!brut.androlib.apk.ApkInfo
+apkFileName: mini metro1.apk
+doNotCompress:
+- resources.arsc
+- png
+- assets/Atlases/mobile/hd/fonts-0_rle.bytes
+- assets/Atlases/mobile/hd/fonts-1_rle.bytes
+- assets/Atlases/mobile/hd/fonts-2_rle.bytes
+- assets/Atlases/mobile/hd/fonts-3_rle.bytes
+- assets/Atlases/mobile/hd/fonts-4_rle.bytes
+- assets/Atlases/mobile/hd/fonts-5_rle.bytes
+- assets/Atlases/mobile/hd/fonts-6_rle.bytes
+- assets/Atlases/mobile/hd/fonts-7_rle.bytes
+- assets/Atlases/mobile/hd/fonts-8_rle.bytes
+- assets/Atlases/mobile/sd/fonts-0_rle.bytes
+- assets/Atlases/mobile/sd/fonts-1_rle.bytes
+- assets/Atlases/mobile/sd/fonts-2_rle.bytes
+- assets/Sounds/24000/core.bytes
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+resourcesAreCompressed: false
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: true
+unknownFiles:
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-drive.properties: '8'
+  play-services-games.properties: '8'
+  play-services-nearby.properties: '8'
+  play-services-tasks.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.8.1
+versionInfo:
+  versionCode: '69'
+  versionName: 2.41.0

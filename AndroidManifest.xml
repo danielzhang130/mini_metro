@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="preferExternal" package="nz.co.codepoint.minimetro" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FAKE_PACKAGE_SIGNATURE"/>
+    <uses-feature android:name="android.hardware.type.pc" android:required="false"/>
+    <application        android:usesCleartextTraffic="true" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:theme="@style/UnityThemeSelector">
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.dinopoloclub.minimetro.nbo.LicensedActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+        </activity>
+        <meta-data android:name="unity.build-id" android:value="f659dc1c-c83d-4a8d-90b9-78434d1121ba"/>
+        <meta-data android:name="unity.splash-mode" android:value="0"/>
+        <meta-data android:name="unity.splash-enable" android:value="true"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="nz.co.codepoint.minimetro.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"/>
+        <meta-data android:name="com.google.android.gms.games.unityVersion" android:value="0.9.62"/>
+        <meta-data android:name="fake-signature" android:value="308203853082026da0030201020204714423fb300d06092a864886f70d01010b05003073310b300906035504061302465231123010060355040813094772616e642d457374310e300c060355040713054e616e637931143012060355040a130b506c6179646967696f757331143012060355040b130b506c6179646967696f7573311430120603550403130b506c6179646967696f7573301e170d3136303931333133343832375a170d3434303133303133343832375a3073310b300906035504061302465231123010060355040813094772616e642d457374310e300c060355040713054e616e637931143012060355040a130b506c6179646967696f757331143012060355040b130b506c6179646967696f7573311430120603550403130b506c6179646967696f757330820122300d06092a864886f70d01010105000382010f003082010a02820101009c7d151bdf18a7b065016d01d92e11fee19b63e728060195015fba58d3be866ceff0c1204399b3ef4cf57b237eff78a9aa55d08e7c8e0f5da104b80eb40673e7026b79af41f15fdff0738138866fc63f8e0c2a1dc5c366a800d88d35cd4c11eb3137dc480f00c04781745256cecec28716d8a63cec4255cdc6082bf9dcb99fcdb4b3dc9eb4004887e8a316a71ccb222359b22a2544741795e99320ffbe6a5b46ea4114bc71cf5a58c2a9332a72fe4a5fc7c1a228ed186c64ad6df9ff3ab164eb963869ac5a75d794cfece71c5b3971edecfadd68b1530e2b2c09c161287a0068c8bb6d25aba3ac5430e8ac8d8ed7d11733039b2cf5da8adbdbbe1e5f4c091fc70203010001a321301f301d0603551d0e04160414342cf9b75ad33cb4c80125d854ae7798b3459654300d06092a864886f70d01010b050003820101002edafa53f735aaa8d53b389d043ab116e413a0fa33cb5a63522d249e009bb6fd46a567bf3851535ba4e0555121e82863b8e9c81d96a78dc5f1d55d301ab525098ef86252dd87fffd33e0e3c20a4b5522b79fec98a6dcb28b576d86c1eedaaf2b6a3510dcba553813e1c8fde8c705030db70150de1b824ab67bbac483a9a2282e39fd1e9bd724e8e3993dc2dfd74a2b7f805081dab9a499895b72ac5fddcfeb635172f93b35bfe473b2e3fb7f453fd14038754e9404ba5d4ddc72483cfe997d52668856eb7909e84a2cb3d1826bb0c9262e7f7e0e1d0b133549811976b1d837958308ca36956e364b5285cc71bf18eca769b68fd1f005af6d5aac6ee69c95accc"/>
+        <activity android:name="com.google.games.bridge.NativeBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+    </application>
+</manifest>
